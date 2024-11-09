@@ -6,66 +6,66 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-}
-
-header {
-    background-color: #171a3a;
-    color: white;
-    padding: 1em;
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Georgia', serif;
-    font-size: 2em;
-}
-
-main {
+    background-color: #f4f4f4;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.sobre-mim, .galeria {
-    flex: 1;
+.form-container {
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
     background-color: white;
-    border: 1px solid #ddd;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.sobre-mim p {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.galeria ul {
-    display: flex;
-    list-style-type: none;
-    gap: 10px;
-    padding: 0;
-}
-
-.galeria li {
-    flex: 1;
-}
-
-.galeria img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    height: 200px;
-    object-fit: cover;
-}
-
-footer {
+h2 {
     text-align: center;
-    padding: 1em;
-    background-color: #6f6f6f;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
     color: white;
-    font-size: 0.9em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
 }
