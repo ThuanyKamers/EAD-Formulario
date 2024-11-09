@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo com Títulos e Textos Estilizados</title>
-    <!-- Link para o arquivo CSS -->
+    <title>Formulário de Contato</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 class="titulo-estilo1">Título 1 - Estilo Rosa</h1>
-        <p class="texto-estilo1">Este é o primeiro parágrafo com estilo personalizado.</p>
+    <div class="form-container">
+        <h2>Contato</h2>
+        <form action="#" method="post">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required placeholder="Seu nome">
 
-        <h1 class="titulo-estilo2">Título 2 - Estilo Amarelo</h1>
-        <p class="texto-estilo2">Este é o segundo parágrafo com um estilo diferente.</p>
-    </header>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Seu email">
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" maxlength="500" required placeholder="Escreva sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
